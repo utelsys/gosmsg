@@ -8,13 +8,15 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on:
+      - self-hosted
+      - docker
     steps:
-    - uses: actions/checkout@v4 # Checks out your repository under $GITHUB_WORKSPACE
+    - uses: actions/checkout@v7 # Checks out your repository under $GITHUB_WORKSPACE
     - name: Set up Go
-      uses: actions/setup-go@v5
+      uses: actions/setup-go@v6
       with:
-        go-version: '1.25'
+        go-version: '1.26'
     - name: Build
       run: go build ./...
     - name: Test
