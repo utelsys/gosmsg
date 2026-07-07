@@ -1,4 +1,4 @@
-module github.com/noselasd/gosmsg
+module github.com/utelsys/gosmsg
 
 go 1.25
 

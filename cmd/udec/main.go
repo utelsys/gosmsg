@@ -45,7 +45,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/noselasd/gosmsg"
+	"github.com/utelsys/gosmsg"
 )
 
 // schemaFiles is a custom flag type that accumulates multiple schema file/directory paths

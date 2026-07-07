@@ -34,7 +34,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/noselasd/gosmsg"
+	"github.com/utelsys/gosmsg"
 )
 
 var (
